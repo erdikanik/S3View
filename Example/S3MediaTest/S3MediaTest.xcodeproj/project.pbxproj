@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37EC8BB7A11E59F10476EA9E /* Pods_S3MediaTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A0337CA8E154CF042E2FF8 /* Pods_S3MediaTest.framework */; };
+		8707C0AD24A8C63000EB41C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8707C0AC24A8C63000EB41C7 /* AppDelegate.swift */; };
+		8707C0AF24A8C63000EB41C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8707C0AE24A8C63000EB41C7 /* SceneDelegate.swift */; };
+		8707C0B124A8C63000EB41C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8707C0B024A8C63000EB41C7 /* ViewController.swift */; };
+		8707C0B424A8C63000EB41C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8707C0B224A8C63000EB41C7 /* Main.storyboard */; };
+		8707C0B624A8C63400EB41C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8707C0B524A8C63400EB41C7 /* Assets.xcassets */; };
+		8707C0B924A8C63400EB41C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8707C0B724A8C63400EB41C7 /* LaunchScreen.storyboard */; };
+		8707C0C824A8C79A00EB41C7 /* S3MediaUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8707C0C124A8C79A00EB41C7 /* S3MediaUtils.swift */; };
+		8707C0C924A8C79A00EB41C7 /* S3MediaDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8707C0C224A8C79A00EB41C7 /* S3MediaDownloader.swift */; };
+		8707C0CA24A8C79A00EB41C7 /* S3MediaTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8707C0C324A8C79A00EB41C7 /* S3MediaTask.swift */; };
+		8707C0CB24A8C79A00EB41C7 /* S3Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8707C0C424A8C79A00EB41C7 /* S3Media.swift */; };
+		8707C0CC24A8C79A00EB41C7 /* S3MediaTaskDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8707C0C524A8C79A00EB41C7 /* S3MediaTaskDispatcher.swift */; };
+		8707C0CD24A8C79A00EB41C7 /* S3MediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8707C0C624A8C79A00EB41C7 /* S3MediaView.swift */; };
+		8707C0CE24A8C79A00EB41C7 /* S3MediaResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8707C0C724A8C79A00EB41C7 /* S3MediaResult.swift */; };
+		8707C0D124A8FF7000EB41C7 /* MediaPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8707C0D024A8FF7000EB41C7 /* MediaPageViewController.swift */; };
+		8707C0D424A9007900EB41C7 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8707C0D324A9007900EB41C7 /* DataProvider.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		14A0337CA8E154CF042E2FF8 /* Pods_S3MediaTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_S3MediaTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		312A11A6871702AF042B38F9 /* Pods-S3MediaTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S3MediaTest.release.xcconfig"; path = "Target Support Files/Pods-S3MediaTest/Pods-S3MediaTest.release.xcconfig"; sourceTree = "<group>"; };
+		6D249186C10476FA3673CC68 /* Pods-S3MediaTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S3MediaTest.debug.xcconfig"; path = "Target Support Files/Pods-S3MediaTest/Pods-S3MediaTest.debug.xcconfig"; sourceTree = "<group>"; };
+		8707C0A924A8C63000EB41C7 /* S3MediaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = S3MediaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8707C0AC24A8C63000EB41C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8707C0AE24A8C63000EB41C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8707C0B024A8C63000EB41C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8707C0B324A8C63000EB41C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8707C0B524A8C63400EB41C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8707C0B824A8C63400EB41C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8707C0BA24A8C63400EB41C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8707C0C124A8C79A00EB41C7 /* S3MediaUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = S3MediaUtils.swift; sourceTree = "<group>"; };
+		8707C0C224A8C79A00EB41C7 /* S3MediaDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = S3MediaDownloader.swift; sourceTree = "<group>"; };
+		8707C0C324A8C79A00EB41C7 /* S3MediaTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = S3MediaTask.swift; sourceTree = "<group>"; };
+		8707C0C424A8C79A00EB41C7 /* S3Media.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = S3Media.swift; sourceTree = "<group>"; };
+		8707C0C524A8C79A00EB41C7 /* S3MediaTaskDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = S3MediaTaskDispatcher.swift; sourceTree = "<group>"; };
+		8707C0C624A8C79A00EB41C7 /* S3MediaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = S3MediaView.swift; sourceTree = "<group>"; };
+		8707C0C724A8C79A00EB41C7 /* S3MediaResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = S3MediaResult.swift; sourceTree = "<group>"; };
+		8707C0D024A8FF7000EB41C7 /* MediaPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPageViewController.swift; sourceTree = "<group>"; };
+		8707C0D324A9007900EB41C7 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8707C0A624A8C63000EB41C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37EC8BB7A11E59F10476EA9E /* Pods_S3MediaTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0089C098651DCC2B4F96FE4C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D249186C10476FA3673CC68 /* Pods-S3MediaTest.debug.xcconfig */,
+				312A11A6871702AF042B38F9 /* Pods-S3MediaTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		333ED377BFC03E5E550ED8EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14A0337CA8E154CF042E2FF8 /* Pods_S3MediaTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8707C0A024A8C63000EB41C7 = {
+			isa = PBXGroup;
+			children = (
+				8707C0AB24A8C63000EB41C7 /* S3MediaTest */,
+				8707C0AA24A8C63000EB41C7 /* Products */,
+				0089C098651DCC2B4F96FE4C /* Pods */,
+				333ED377BFC03E5E550ED8EF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8707C0AA24A8C63000EB41C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8707C0A924A8C63000EB41C7 /* S3MediaTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8707C0AB24A8C63000EB41C7 /* S3MediaTest */ = {
+			isa = PBXGroup;
+			children = (
+				8707C0D224A9006900EB41C7 /* DataProvider */,
+				8707C0CF24A8FA3100EB41C7 /* ViewControllers */,
+				8707C0C024A8C79A00EB41C7 /* S3View */,
+				8707C0AC24A8C63000EB41C7 /* AppDelegate.swift */,
+				8707C0AE24A8C63000EB41C7 /* SceneDelegate.swift */,
+				8707C0B224A8C63000EB41C7 /* Main.storyboard */,
+				8707C0B524A8C63400EB41C7 /* Assets.xcassets */,
+				8707C0B724A8C63400EB41C7 /* LaunchScreen.storyboard */,
+				8707C0BA24A8C63400EB41C7 /* Info.plist */,
+			);
+			path = S3MediaTest;
+			sourceTree = "<group>";
+		};
+		8707C0C024A8C79A00EB41C7 /* S3View */ = {
+			isa = PBXGroup;
+			children = (
+				8707C0C124A8C79A00EB41C7 /* S3MediaUtils.swift */,
+				8707C0C224A8C79A00EB41C7 /* S3MediaDownloader.swift */,
+				8707C0C324A8C79A00EB41C7 /* S3MediaTask.swift */,
+				8707C0C424A8C79A00EB41C7 /* S3Media.swift */,
+				8707C0C524A8C79A00EB41C7 /* S3MediaTaskDispatcher.swift */,
+				8707C0C624A8C79A00EB41C7 /* S3MediaView.swift */,
+				8707C0C724A8C79A00EB41C7 /* S3MediaResult.swift */,
+			);
+			name = S3View;
+			path = ../../../S3View;
+			sourceTree = "<group>";
+		};
+		8707C0CF24A8FA3100EB41C7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8707C0B024A8C63000EB41C7 /* ViewController.swift */,
+				8707C0D024A8FF7000EB41C7 /* MediaPageViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8707C0D224A9006900EB41C7 /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				8707C0D324A9007900EB41C7 /* DataProvider.swift */,
+			);
+			path = DataProvider;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8707C0A824A8C63000EB41C7 /* S3MediaTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8707C0BD24A8C63400EB41C7 /* Build configuration list for PBXNativeTarget "S3MediaTest" */;
+			buildPhases = (
+				86209C7FB8BCED00761484AE /* [CP] Check Pods Manifest.lock */,
+				8707C0A524A8C63000EB41C7 /* Sources */,
+				8707C0A624A8C63000EB41C7 /* Frameworks */,
+				8707C0A724A8C63000EB41C7 /* Resources */,
+				DB8F0A6D0931B2F262D175E5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = S3MediaTest;
+			productName = S3MediaTest;
+			productReference = 8707C0A924A8C63000EB41C7 /* S3MediaTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8707C0A124A8C63000EB41C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "*";
+				TargetAttributes = {
+					8707C0A824A8C63000EB41C7 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 8707C0A424A8C63000EB41C7 /* Build configuration list for PBXProject "S3MediaTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8707C0A024A8C63000EB41C7;
+			productRefGroup = 8707C0AA24A8C63000EB41C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8707C0A824A8C63000EB41C7 /* S3MediaTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8707C0A724A8C63000EB41C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8707C0B924A8C63400EB41C7 /* LaunchScreen.storyboard in Resources */,
+				8707C0B624A8C63400EB41C7 /* Assets.xcassets in Resources */,
+				8707C0B424A8C63000EB41C7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		86209C7FB8BCED00761484AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-S3MediaTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB8F0A6D0931B2F262D175E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-S3MediaTest/Pods-S3MediaTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-S3MediaTest/Pods-S3MediaTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-S3MediaTest/Pods-S3MediaTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8707C0A524A8C63000EB41C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8707C0CB24A8C79A00EB41C7 /* S3Media.swift in Sources */,
+				8707C0CD24A8C79A00EB41C7 /* S3MediaView.swift in Sources */,
+				8707C0C824A8C79A00EB41C7 /* S3MediaUtils.swift in Sources */,
+				8707C0B124A8C63000EB41C7 /* ViewController.swift in Sources */,
+				8707C0AD24A8C63000EB41C7 /* AppDelegate.swift in Sources */,
+				8707C0AF24A8C63000EB41C7 /* SceneDelegate.swift in Sources */,
+				8707C0D424A9007900EB41C7 /* DataProvider.swift in Sources */,
+				8707C0C924A8C79A00EB41C7 /* S3MediaDownloader.swift in Sources */,
+				8707C0CC24A8C79A00EB41C7 /* S3MediaTaskDispatcher.swift in Sources */,
+				8707C0CA24A8C79A00EB41C7 /* S3MediaTask.swift in Sources */,
+				8707C0D124A8FF7000EB41C7 /* MediaPageViewController.swift in Sources */,
+				8707C0CE24A8C79A00EB41C7 /* S3MediaResult.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8707C0B224A8C63000EB41C7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8707C0B324A8C63000EB41C7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8707C0B724A8C63400EB41C7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8707C0B824A8C63400EB41C7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8707C0BB24A8C63400EB41C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8707C0BC24A8C63400EB41C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8707C0BE24A8C63400EB41C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D249186C10476FA3673CC68 /* Pods-S3MediaTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = S3MediaTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.identifier.S3MediaTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8707C0BF24A8C63400EB41C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 312A11A6871702AF042B38F9 /* Pods-S3MediaTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = S3MediaTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.identifier.S3MediaTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8707C0A424A8C63000EB41C7 /* Build configuration list for PBXProject "S3MediaTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8707C0BB24A8C63400EB41C7 /* Debug */,
+				8707C0BC24A8C63400EB41C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8707C0BD24A8C63400EB41C7 /* Build configuration list for PBXNativeTarget "S3MediaTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8707C0BE24A8C63400EB41C7 /* Debug */,
+				8707C0BF24A8C63400EB41C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8707C0A124A8C63000EB41C7 /* Project object */;
+}
