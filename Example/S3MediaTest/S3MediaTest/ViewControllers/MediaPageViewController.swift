@@ -36,14 +36,12 @@ class MediaPageViewController: UIViewController {
     }
 }
 
-extension MediaPageViewController: S3MediaTaskDelegate {
+extension MediaPageViewController: S3MediaTaskDispatcherDelegate {
     func s3MediaTaskDispatcherDidCompleteFetching(dispatcher: S3MediaTaskDispatcher,
                                                   dispatchedMedias: [S3Media]?, error: Error?) {
         if error == nil {
             DispatchQueue.main.async {
                 self.mediaView.medias = dispatchedMedias
-                self.view.setNeedsLayout()
-                self.view.layoutIfNeeded()
             }
         } else {
             // Problem is occured

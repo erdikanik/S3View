@@ -23,6 +23,9 @@
 		8707C0CE24A8C79A00EB41C7 /* S3MediaResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8707C0C724A8C79A00EB41C7 /* S3MediaResult.swift */; };
 		8707C0D124A8FF7000EB41C7 /* MediaPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8707C0D024A8FF7000EB41C7 /* MediaPageViewController.swift */; };
 		8707C0D424A9007900EB41C7 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8707C0D324A9007900EB41C7 /* DataProvider.swift */; };
+		8707C0D724AA7BB300EB41C7 /* S3MediaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8707C0D624AA7BB300EB41C7 /* S3MediaTableViewCell.swift */; };
+		8707C0D924AA7BC400EB41C7 /* S3MediaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8707C0D824AA7BC400EB41C7 /* S3MediaTableViewCell.xib */; };
+		87A033F124ABC68B0017D223 /* MediaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A033F024ABC68B0017D223 /* MediaTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		8707C0C724A8C79A00EB41C7 /* S3MediaResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = S3MediaResult.swift; sourceTree = "<group>"; };
 		8707C0D024A8FF7000EB41C7 /* MediaPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPageViewController.swift; sourceTree = "<group>"; };
 		8707C0D324A9007900EB41C7 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		8707C0D624AA7BB300EB41C7 /* S3MediaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S3MediaTableViewCell.swift; sourceTree = "<group>"; };
+		8707C0D824AA7BC400EB41C7 /* S3MediaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = S3MediaTableViewCell.xib; sourceTree = "<group>"; };
+		87A033F024ABC68B0017D223 /* MediaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,7 @@
 		8707C0AB24A8C63000EB41C7 /* S3MediaTest */ = {
 			isa = PBXGroup;
 			children = (
+				8707C0D524AA7B6C00EB41C7 /* Cells */,
 				8707C0D224A9006900EB41C7 /* DataProvider */,
 				8707C0CF24A8FA3100EB41C7 /* ViewControllers */,
 				8707C0C024A8C79A00EB41C7 /* S3View */,
@@ -131,6 +138,7 @@
 			children = (
 				8707C0B024A8C63000EB41C7 /* ViewController.swift */,
 				8707C0D024A8FF7000EB41C7 /* MediaPageViewController.swift */,
+				87A033F024ABC68B0017D223 /* MediaTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -141,6 +149,15 @@
 				8707C0D324A9007900EB41C7 /* DataProvider.swift */,
 			);
 			path = DataProvider;
+			sourceTree = "<group>";
+		};
+		8707C0D524AA7B6C00EB41C7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8707C0D624AA7BB300EB41C7 /* S3MediaTableViewCell.swift */,
+				8707C0D824AA7BC400EB41C7 /* S3MediaTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +222,7 @@
 			files = (
 				8707C0B924A8C63400EB41C7 /* LaunchScreen.storyboard in Resources */,
 				8707C0B624A8C63400EB41C7 /* Assets.xcassets in Resources */,
+				8707C0D924AA7BC400EB41C7 /* S3MediaTableViewCell.xib in Resources */,
 				8707C0B424A8C63000EB41C7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,8 +276,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87A033F124ABC68B0017D223 /* MediaTableViewController.swift in Sources */,
 				8707C0CB24A8C79A00EB41C7 /* S3Media.swift in Sources */,
 				8707C0CD24A8C79A00EB41C7 /* S3MediaView.swift in Sources */,
+				8707C0D724AA7BB300EB41C7 /* S3MediaTableViewCell.swift in Sources */,
 				8707C0C824A8C79A00EB41C7 /* S3MediaUtils.swift in Sources */,
 				8707C0B124A8C63000EB41C7 /* ViewController.swift in Sources */,
 				8707C0AD24A8C63000EB41C7 /* AppDelegate.swift in Sources */,

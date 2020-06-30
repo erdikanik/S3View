@@ -9,7 +9,7 @@
 import AVFoundation
 import UIKit
 
-public protocol S3MediaTaskDelegate: class {
+public protocol S3MediaTaskDispatcherDelegate: class {
     
     func s3MediaTaskDispatcherDidCompleteFetching(dispatcher: S3MediaTaskDispatcher, dispatchedMedias: [S3Media]?, error: Error?)
     func s3MediaTaskDispatcherDidFinishTask(dispatcher: S3MediaTaskDispatcher,
@@ -19,6 +19,13 @@ public protocol S3MediaTaskDelegate: class {
 }
 
 public final class S3MediaTaskDispatcher {
+    
+    public enum State {
+        
+        case notStarted
+        case loading
+        case completed
+    }
     
     private class S3Error: NSError {
 
@@ -35,10 +42,11 @@ public final class S3MediaTaskDispatcher {
         }
     }
     
-    public var s3MediaTaskDispatcherDelegate: S3MediaTaskDelegate?
+    public var s3MediaTaskDispatcherDelegate: S3MediaTaskDispatcherDelegate?
     public var isCachingEnabled = true
-    public private(set) var fetchedMedias: [S3Media]?
     public let groupId: String
+    public var state = State.notStarted
+    public private(set) var fetchedMedias: [S3Media]?
     
     private var urlResultMap: [String: S3MediaResult?]
     private var tasks: [S3MediaTask]
@@ -50,6 +58,7 @@ public final class S3MediaTaskDispatcher {
     }
     
     public func start() {
+        state = .loading
         let dispatchGroup = DispatchGroup()
         for task in tasks {
             dispatchGroup.enter()
@@ -143,5 +152,6 @@ public final class S3MediaTaskDispatcher {
         
         fetchedMedias = medias
         s3MediaTaskDispatcherDelegate?.s3MediaTaskDispatcherDidCompleteFetching(dispatcher: self, dispatchedMedias: medias, error: nil)
+        state = .completed
     }
 }

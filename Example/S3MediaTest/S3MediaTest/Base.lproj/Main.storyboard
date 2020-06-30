@@ -64,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="139" y="73"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Media Table View Controller-->
         <scene sceneID="5OC-F5-XWs">
             <objects>
-                <tableViewController id="KU6-Rk-m5Z" sceneMemberID="viewController">
+                <tableViewController id="KU6-Rk-m5Z" customClass="MediaTableViewController" customModule="S3MediaTest" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5F4-7A-NPU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
