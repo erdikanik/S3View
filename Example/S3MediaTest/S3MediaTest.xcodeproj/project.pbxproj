@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		37EC8BB7A11E59F10476EA9E /* Pods_S3MediaTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A0337CA8E154CF042E2FF8 /* Pods_S3MediaTest.framework */; };
 		8707C0AD24A8C63000EB41C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8707C0AC24A8C63000EB41C7 /* AppDelegate.swift */; };
-		8707C0AF24A8C63000EB41C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8707C0AE24A8C63000EB41C7 /* SceneDelegate.swift */; };
 		8707C0B124A8C63000EB41C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8707C0B024A8C63000EB41C7 /* ViewController.swift */; };
 		8707C0B424A8C63000EB41C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8707C0B224A8C63000EB41C7 /* Main.storyboard */; };
 		8707C0B624A8C63400EB41C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8707C0B524A8C63400EB41C7 /* Assets.xcassets */; };
@@ -34,7 +33,6 @@
 		6D249186C10476FA3673CC68 /* Pods-S3MediaTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S3MediaTest.debug.xcconfig"; path = "Target Support Files/Pods-S3MediaTest/Pods-S3MediaTest.debug.xcconfig"; sourceTree = "<group>"; };
 		8707C0A924A8C63000EB41C7 /* S3MediaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = S3MediaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8707C0AC24A8C63000EB41C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8707C0AE24A8C63000EB41C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8707C0B024A8C63000EB41C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8707C0B324A8C63000EB41C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8707C0B524A8C63400EB41C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 				8707C0CF24A8FA3100EB41C7 /* ViewControllers */,
 				8707C0C024A8C79A00EB41C7 /* S3View */,
 				8707C0AC24A8C63000EB41C7 /* AppDelegate.swift */,
-				8707C0AE24A8C63000EB41C7 /* SceneDelegate.swift */,
 				8707C0B224A8C63000EB41C7 /* Main.storyboard */,
 				8707C0B524A8C63400EB41C7 /* Assets.xcassets */,
 				8707C0B724A8C63400EB41C7 /* LaunchScreen.storyboard */,
@@ -283,7 +280,6 @@
 				8707C0C824A8C79A00EB41C7 /* S3MediaUtils.swift in Sources */,
 				8707C0B124A8C63000EB41C7 /* ViewController.swift in Sources */,
 				8707C0AD24A8C63000EB41C7 /* AppDelegate.swift in Sources */,
-				8707C0AF24A8C63000EB41C7 /* SceneDelegate.swift in Sources */,
 				8707C0D424A9007900EB41C7 /* DataProvider.swift in Sources */,
 				8707C0C924A8C79A00EB41C7 /* S3MediaDownloader.swift in Sources */,
 				8707C0CC24A8C79A00EB41C7 /* S3MediaTaskDispatcher.swift in Sources */,
@@ -436,6 +432,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = S3MediaTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,6 +451,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = S3MediaTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
