@@ -21,10 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AWSDDLog.sharedInstance.logLevel = .debug
         
         let credentialsProvider = AWSCognitoCredentialsProvider(regionType:.USEast1,
-           identityPoolId:"us-east-1:a745f0cf-984e-4d19-83ee-fb1e9e09cfd7")
+           identityPoolId:"us-east-1:2de1f0e1-4d34-4193-a970-1a2c765925ec")
 
         let configuration = AWSServiceConfiguration(region:.USEast1, credentialsProvider:credentialsProvider)
 
+        AWSServiceManager.default().defaultServiceConfiguration = configuration
 
         //Setup the transfer utility configuration
         let tuConf = AWSS3TransferUtilityConfiguration()

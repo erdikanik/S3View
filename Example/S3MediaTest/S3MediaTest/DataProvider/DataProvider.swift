@@ -12,7 +12,7 @@ class DataProvider {
     
     private enum Buckets {
         
-        static let mediaBucket = "s3-media-test-app/public/mediaImages"
+        static let mediaBucket = "s3-media-test-app1/public/mediaImages"
     }
     
     private static func mediaPageList() -> [String] {
